@@ -11,6 +11,7 @@
   inputs.src-nancy-master.ref   = "refs/heads/master";
   inputs.src-nancy-master.owner = "PMunch";
   inputs.src-nancy-master.repo  = "nancy";
+  inputs.src-nancy-master.dir   = "";
   inputs.src-nancy-master.type  = "github";
   
   inputs."ansiparse".owner = "nim-nix-pkgs";
