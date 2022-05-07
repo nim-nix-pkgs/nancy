@@ -3,20 +3,22 @@
     "ansiparse": {
       "inputs": {
         "flakeNimbleLib": [
+          "nancy-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "nancy-master",
           "nixpkgs"
         ],
         "src-ansiparse-v0_2_0": "src-ansiparse-v0_2_0"
       },
       "locked": {
         "dir": "v0_2_0",
-        "lastModified": 1651917709,
-        "narHash": "sha256-opOPS6yHXAdYypZ1opNsitQ0M0PFwFbpzwK0HnkQj00=",
+        "lastModified": 1651555219,
+        "narHash": "sha256-AqwInrYIMSr3RXBg/QfgRu5TkxTfoQowBJn47j1hoAg=",
         "owner": "nim-nix-pkgs",
         "repo": "ansiparse",
-        "rev": "769da7b076166e92e6aadedb15e25f44ca76b875",
+        "rev": "90b0c49ebaaf17f6c3a1f8d19459023de871259d",
         "type": "github"
       },
       "original": {
@@ -48,6 +50,34 @@
         "type": "github"
       }
     },
+    "nancy-master": {
+      "inputs": {
+        "ansiparse": "ansiparse",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-nancy-master": "src-nancy-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556762,
+        "narHash": "sha256-5Do3nJ/V5aZhpr5B/Wl93uroQLh152/5meIBzU/moYM=",
+        "owner": "nim-nix-pkgs",
+        "repo": "nancy",
+        "rev": "53b0eb21b740316e76a0c692b4d2fb9632bdfe88",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "nancy",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "narHash": "sha256-7sWpWRO0IsBP5jm9qCrpuzDkWC7UAghiCmZZ+1uqHKo=",
@@ -61,10 +91,9 @@
     },
     "root": {
       "inputs": {
-        "ansiparse": "ansiparse",
         "flakeNimbleLib": "flakeNimbleLib",
-        "nixpkgs": "nixpkgs",
-        "src-nancy-master": "src-nancy-master"
+        "nancy-master": "nancy-master",
+        "nixpkgs": "nixpkgs"
       }
     },
     "src-ansiparse-v0_2_0": {
